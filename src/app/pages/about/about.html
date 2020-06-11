@@ -14,17 +14,16 @@
 
   <div class="about-header">
     <!-- Instead of loading an image each time the select changes, use opacity to transition them -->
-    <div class="about-image madison" [ngStyle]="location === 'madison' && {'opacity': '1'}"></div>
-    <div class="about-image austin" [ngStyle]="location === 'austin' && {'opacity': '1'}"></div>
-    <div class="about-image chicago" [ngStyle]="location === 'chicago' && {'opacity': '1'}"></div>
-    <div class="about-image seattle" [ngStyle]="location === 'seattle' && {'opacity': '1'}"></div>
+    <div class="about-image villemomble" [ngStyle]="location === 'Villemomble' && {'opacity': '1'}"></div>
+    <div class="about-image hanoi" [ngStyle]="location === 'Hanoi' && {'opacity': '1'}"></div>
+    <div class="about-image hanam" [ngStyle]="location === 'Hanam' && {'opacity': '1'}"></div>
   </div>
 
   <div class="about-info">
-    <h3 class="ion-padding-top ion-padding-start">About</h3>
+    <h3 class="ion-padding-top ion-padding-start">MISODA SASU</h3>
 
     <p class="ion-padding-start ion-padding-end">
-      The Ionic Conference is a one-day conference on {{ conferenceDate | date: 'mediumDate' }} featuring talks from the Ionic team. It is focused on Ionic applications being built with Ionic Framework. This includes migrating apps to the latest version of the framework, Angular concepts, Webpack, Sass, and many other technologies used in Ionic 2. Tickets are completely sold out, and we’re expecting more than 1000 developers – making this the largest Ionic conference ever!
+      We are a small IT company based in Villemomble, France. Misoda population until now {{ today | date: 'mediumDate' }} is quite few in number but very hight in quality.  Selection is taken cared of since the beginning from the moment of the first recruitment interview. Only individuals with highly motivated, open mindset, teamwork and beautiful personality are chosen. In Misoda, we do our job with love first, then for the money. Contact us by mail for more info. In the mean time, feel free to checkout our work in this website. Good day.
     </p>
 
     <h3 class="ion-padding-top ion-padding-start">Details</h3>
@@ -35,43 +34,12 @@
           Location
         </ion-label>
         <ion-select [(ngModel)]="location" [interfaceOptions]="selectOptions">
-          <ion-select-option value="madison">Madison, WI</ion-select-option>
-          <ion-select-option value="austin">Austin, TX</ion-select-option>
-          <ion-select-option value="chicago">Chicago, IL</ion-select-option>
-          <ion-select-option value="seattle">Seattle, WA</ion-select-option>
+          <ion-select-option value="Villemomble">Villemomble, FR</ion-select-option>
+          <ion-select-option value="Hanoi">Hanoi, VN</ion-select-option>
+          <ion-select-option value="Hanam">Hanam, VN</ion-select-option>
         </ion-select>
       </ion-item>
-      <ion-item>
-        <ion-label>
-          Date
-        </ion-label>
-        <ion-datetime
-          displayFormat="MMM DD, YYYY"
-          max="2056"
-          [(ngModel)]="conferenceDate">
-        </ion-datetime>
-      </ion-item>
     </ion-list>
 
-    <h3 class="ion-padding-top ion-padding-start">Internet</h3>
-
-    <ion-list lines="none">
-      <ion-item>
-        <ion-label>
-          Wifi network
-        </ion-label>
-        <ion-label class="ion-text-end">
-          ica{{conferenceDate | date: 'y'}}
-        </ion-label>
-      </ion-item>
-      <ion-item>
-        <ion-label>
-          Password
-        </ion-label>
-        <ion-label class="ion-text-end">
-          makegoodthings
-        </ion-label>
-      </ion-item>
-    </ion-list>
   </div>
 </ion-content>

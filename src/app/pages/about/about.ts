@@ -9,9 +9,10 @@ import { PopoverPage } from '../about-popover/about-popover';
   templateUrl: 'about.html',
   styleUrls: ['./about.scss'],
 })
+
 export class AboutPage {
-  location = 'madison';
-  conferenceDate = '2047-05-17';
+  location = 'Villemomble';
+  today = '2020-06-11';
 
   selectOptions = {
     header: 'Select a Location'
