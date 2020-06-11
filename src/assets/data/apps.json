@@ -1,0 +1,28 @@
+{
+  "applications": [
+    {
+      "id" : "0",
+      "name" : "MisoPG",
+      "title" : "Password Generator",
+      "profilePic" : "/assets/img/apps/pg.jpg"
+    },
+    {
+      "id" : "1",
+      "name" : "MisoScan",
+      "title" : "Scan and upload documents",
+      "profilePic" : "/assets/img/apps/scan.jpg"
+    },
+    {
+      "id" : "2",
+      "name" : "MisoArchive",
+      "title" : "Store and archive document",
+      "profilePic" : "/assets/img/apps/archive.jpg"
+    },
+    {
+      "id" : "3",
+      "name" : "MisoShop",
+      "title" : "Ecommerce",
+      "profilePic" : "/assets/img/apps/shop.jpg"
+    }
+  ]
+}

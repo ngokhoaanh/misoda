@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {AppsData} from '../../providers/apps-data';
 
 @Component({
   selector: 'app-apps',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppsPage implements OnInit {
 
-  constructor() { }
+  applications: any[] = [];
+
+  constructor(private appsData: AppsData) { }
 
   ngOnInit() {
   }
 
+  ionViewDidEnter() {
+    this.appsData.getApplications().subscribe((applications: any[]) => {
+      this.applications = applications;
+    });
+  }
 }
