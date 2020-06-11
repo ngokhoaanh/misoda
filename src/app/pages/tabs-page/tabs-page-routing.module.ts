@@ -58,6 +58,33 @@ const routes: Routes = [
         ]
       },
       {
+        path: 'apps',
+        children: [
+          {
+            path: '',
+            loadChildren: () => import('../apps/apps.module').then(m => m.AppsPageModule)
+          }
+        ]
+      },
+      {
+        path: 'games',
+        children: [
+          {
+            path: '',
+            loadChildren: () => import('../games/games.module').then(m => m.GamesPageModule)
+          }
+        ]
+      },
+      {
+        path: 'settings',
+        children: [
+          {
+            path: '',
+            loadChildren: () => import('../settings/settings.module').then(m => m.SettingsPageModule)
+          }
+        ]
+      },
+      {
         path: '',
         redirectTo: '/app/tabs/schedule',
         pathMatch: 'full'
