@@ -4,11 +4,6 @@
       <ion-buttons slot="start">
         <ion-menu-button></ion-menu-button>
       </ion-buttons>
-      <ion-buttons slot="end">
-        <ion-button (click)="presentPopover($event)">
-          <ion-icon slot="icon-only" ios="ellipsis-horizontal" md="ellipsis-vertical"></ion-icon>
-        </ion-button>
-      </ion-buttons>
     </ion-toolbar>
   </ion-header>
 
@@ -23,7 +18,7 @@
     <h3 class="ion-padding-top ion-padding-start">MISODA SASU</h3>
 
     <p class="ion-padding-start ion-padding-end">
-      We are a small IT company based in Villemomble, France. Misoda population until now {{ today | date: 'mediumDate' }} is quite few in number but very hight in quality.  Selection is taken cared of since the beginning from the moment of the first recruitment interview. Only individuals with highly motivated, open mindset, teamwork and beautiful personality are chosen. In Misoda, we do our job with love first, then for the money. Contact us by mail for more info. In the mean time, feel free to checkout our work in this website. Good day.
+      We are a small IT company based in Villemomble, France. Misoda population until now {{ today | date: 'mediumDate' }} is quite few in number but very high in quality.  Selection is taken cared of since the beginning from the first interview. Only individuals with highly motivated, open mindset, teamwork and beautiful personality are chosen. In Misoda, we do our job with love first, then for the money. Contact us by mail for more info. In the mean time, feel free to checkout our work in this website. Good day.
     </p>
 
     <h3 class="ion-padding-top ion-padding-start">Details</h3>
@@ -39,6 +34,24 @@
           <ion-select-option value="Hanam">Hanam, VN</ion-select-option>
         </ion-select>
       </ion-item>
+
+      <ion-item>
+        <ion-label>
+          Patreon
+        </ion-label>
+        <ion-button color="warning" (click)="openExternalUrl('https://www.patreon.com/user?u=37091010')">
+          <ion-icon slot="start" name="star-outline"> </ion-icon>
+          Offer a coffee
+        </ion-button>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>
+          Email
+        </ion-label>
+        <ion-text>ddang3008@gmail.com</ion-text>
+      </ion-item>
+
     </ion-list>
 
   </div>
