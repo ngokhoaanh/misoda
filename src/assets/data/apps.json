@@ -2,28 +2,28 @@
   "applications": [
     {
       "id" : "0",
-      "name" : "MisoPG",
+      "name" : "Miso PG",
       "title" : "Password Generator",
       "profilePic" : "/assets/img/apps/pg.jpg",
       "webSite" : "https://nhuquan.github.io/passwordEncoder/"
     },
     {
       "id" : "1",
-      "name" : "MisoScan",
+      "name" : "Miso Scan",
       "title" : "Scan and upload documents",
       "profilePic" : "/assets/img/apps/scan.jpg",
       "webSite" : "https://easyscan.misoda.fr"
     },
     {
       "id" : "2",
-      "name" : "MisoArchive",
+      "name" : "Miso Archive",
       "title" : "Store and archive document",
       "profilePic" : "/assets/img/apps/archive.jpg",
       "webSite" : "https://nhuquan.github.io"
     },
     {
       "id" : "3",
-      "name" : "MisoShop",
+      "name" : "Miso Shop",
       "title" : "Ecommerce",
       "profilePic" : "/assets/img/apps/shop.jpg",
       "webSite" : "https://nhuquan.github.io"

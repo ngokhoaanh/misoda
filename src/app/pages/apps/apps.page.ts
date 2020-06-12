@@ -6,14 +6,11 @@ import {AppsData} from '../../providers/apps-data';
   templateUrl: './apps.page.html',
   styleUrls: ['./apps.page.scss'],
 })
-export class AppsPage implements OnInit {
+export class AppsPage {
 
   applications: any[] = [];
 
   constructor(private appsData: AppsData) { }
-
-  ngOnInit() {
-  }
 
   ionViewDidEnter() {
     this.appsData.getApplications().subscribe((applications: any[]) => {

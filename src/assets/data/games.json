@@ -1,0 +1,18 @@
+{
+  "games": [
+    {
+      "id" : "0",
+      "name" : "Star Hunter",
+      "title" : "Star Hunter",
+      "profilePic" : "/assets/img/games/starhunter.jpg",
+      "webSite" : "https://nhuquan.github.io/starHunter/"
+    },
+    {
+      "id" : "1",
+      "name" : "Flappy Bird Clone",
+      "title" : "Flappy Bird Clone",
+      "profilePic" : "/assets/img/games/flappy.jpg",
+      "webSite" : "https://nhuquan.github.io/flappy/"
+    }
+  ]
+}
