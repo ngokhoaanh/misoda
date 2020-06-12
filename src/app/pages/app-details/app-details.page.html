@@ -15,6 +15,11 @@
   <div class="ion-padding speaker-detail">
     <hr>
 
+    <ion-chip color="instagram" button (click)="openExternalUrl(application.webSite)">
+      <ion-icon name="logo-instagram"></ion-icon>
+      <ion-label>Website</ion-label>
+    </ion-chip>
+
     <ion-chip color="twitter" button (click)="openExternalUrl('https://twitter.com/' + application.twitter)">
       <ion-icon name="logo-twitter"></ion-icon>
       <ion-label>Twitter</ion-label>
@@ -29,5 +34,6 @@
       <ion-icon name="logo-instagram"></ion-icon>
       <ion-label>Instagram</ion-label>
     </ion-chip>
+
   </div>
 </ion-content>
