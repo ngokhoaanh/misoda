@@ -63,6 +63,10 @@ const routes: Routes = [
           {
             path: '',
             loadChildren: () => import('../apps/apps.module').then(m => m.AppsPageModule)
+          },
+          {
+            path: 'app-details/:appId',
+            loadChildren: () => import('../app-details/app-details.module').then(m => m.AppDetailsPageModule)
           }
         ]
       },
