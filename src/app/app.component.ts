@@ -35,9 +35,9 @@ export class AppComponent implements OnInit {
       icon: 'rocket'
     },
     {
-      title: 'Map',
-      url: '/app/tabs/map',
-      icon: 'map'
+      title: 'Media',
+      url: '/app/tabs/media',
+      icon: 'bug'
     }
   ];
   loggedIn = false;
